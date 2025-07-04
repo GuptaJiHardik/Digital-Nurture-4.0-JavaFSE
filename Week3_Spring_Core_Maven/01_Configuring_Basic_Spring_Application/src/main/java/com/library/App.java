@@ -13,7 +13,7 @@ public class App {
         BookService bookService = context.getBean("bookService", BookService.class);
         bookService.addBook();
 
-        ookRepository bookRepository = context.getBean("bookRepository", BookRepository.class);
+        BookRepository bookRepository = context.getBean("bookRepository", BookRepository.class);
         bookRepository.saveBook();
     }
 }
